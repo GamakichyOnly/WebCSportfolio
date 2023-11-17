@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vanderlei - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Vanderlei B. Mendoza</h1>
+        <p>Computer Science Student &amp; from CS-202</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Computer Science Student and Developer with a passion for coding and competitive gaming.</p>
+        <a href="#portfolio" class="cta-button">View Portfolio</a>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+
+        <div class="project">
+            <h3>ClickMaster</h3>
+            <p>Tracks how many clicks a user can do in 10 seconds.</p>
+            <img src="./Mendoza-1.png" alt="ClickMaster Project Image">
+        </div>
+
+        <div class="project">
+            <h3>Valiant MLBB Roster</h3>
+            <p>A website to view all current MLBB rosters within Valiant.</p>
+            <img src="./project2.png" alt="Valiant MLBB Roster Project Image">
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p>Gaming<span class="proficiency">Expert</span></p>
+        </div>
+        <div class="skill">
+            <p>Programming<span class="proficiency">Intermediate</span></p>
+        </div>
+        <div class="skill">
+            <p>Problem Solving<span class="proficiency">Expert</span></p>
+        </div>
+        <div class="skill">
+            <p>Analytical Thinking<span class="proficiency">Expert</span></p>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a 2nd year computer science student studying at Holy Angel University. Coding is my passion. I enjoy bringing my ideas to life by writing elegant code and creating functional programs and apps. The logic and problem-solving aspects of coding appeal to my analytical mind.
+            When I'm not coding, you can often find me gaming online competitively. I thrive on the thrill of the competition and the joy of playing with friends. My favorite games are strategy games that require quick reflexes and critical thinking.
+            I'm always seeking to expand my skills and knowledge. I love learning new things and taking on new challenges. As a computer science student, I look forward to where this journey will take me next. The possibilities seem endless!
+        </p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Connect with me on:</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/uhlei0318/" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/mendoza-vanderlei-2a384a230/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/GamakichyOnly" target="_blank">GitHub</a>
+        </div>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Send Message" class="cta-button">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
